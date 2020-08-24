@@ -1,4 +1,4 @@
 # DATA 440
 
-## For Next Time Links
+## Documentation
 [Getting Started with R and RStudio: Challenge Question](P1.md)
