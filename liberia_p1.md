@@ -26,3 +26,5 @@ ggplot() +
                size = 3)
   ```
  ![](liberia.png)
+ 
+Each respective boundary size is lower, so that it is easier to make out the more general boundaries. Additionally, I used black and gray to contrast each other so the boundaries popped. The text for administrative subdivisions can be hard to make out due to how many different subdivisions there are, combined with a lack of space for text.
