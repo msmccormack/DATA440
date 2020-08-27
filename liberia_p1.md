@@ -1,4 +1,4 @@
-# Spatial Population Description: Liberia
+# Spatial Population Description
 
 This exercise had to do with using packages in R to plot spatial data. These data were downloaded from GADM. The packages we used to create the plots included ggplot, sf, and tidyverse. The plot below of Liberia, its counties, and its administrative subdivisions. We were able to acommplish this through the following code:
 ```
