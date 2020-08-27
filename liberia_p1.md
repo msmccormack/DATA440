@@ -1,6 +1,6 @@
 # Spatial Population Description: Liberia
 
-This exercise had to do with using packages in R to plot spatial data. We created the below plot of Liberia, its counties, and its administrative subdivisions. We were able to acommplish this through the following code:
+This exercise had to do with using packages in R to plot spatial data. These data were downloaded from GADM. The packages we used to create the plots included ggplot, sf, and tidyverse. The plot below of Liberia, its counties, and its administrative subdivisions. We were able to acommplish this through the following code:
 ```
 lbr_int  <- read_sf("gadm36_LBR_shp/gadm36_LBR_0.shp")
 lbr_adm1  <- read_sf("gadm36_LBR_shp/gadm36_LBR_1.shp")
@@ -27,4 +27,10 @@ ggplot() +
   ```
  ![](liberia.png)
  
-Each respective boundary size is lower, so that it is easier to make out the more general boundaries. Additionally, I used black and gray to contrast each other so the boundaries popped. The text for administrative subdivisions can be hard to make out due to how many different subdivisions there are, combined with a lack of space for text.
+Each respective boundary size is lower. We do this so that it is easier to make out the more general boundaries, and the most specific boundaries are less crowded. Additionally, I used black and gray to contrast each other so that the boundaries popped. The text for administrative subdivisions can be hard to make out due to how many different subdivisions there are, combined with a lack of space for text. This was also a problem that I encountered later on, with Senegal.
+
+Next, I did the same for Senegal (the country I chose for my stretch goal/challenge). That plot is below:
+
+![](Senegal_Plot.png)
+
+As you can see, we still had the issue of overlapping subdivision tags. However, I felt like it was slightly more manageable than Liberia. 
