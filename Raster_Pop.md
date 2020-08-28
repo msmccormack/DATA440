@@ -23,3 +23,6 @@ ggplot(sen_sf_adm1) +
    ![](sen_pop19.png)
    
   As you can see, the more densely populated areas are (generally) on the western side of Senegal.
+  
+  I also did this for the subdivision level 2, using fill=log(pop19) inside of the first call to geom_sf. Since the administrative subdivisions on this level are slightly smaller than the level 1, the population concentrations seems more spread out. Additionally, I think taking the log of the population data scaled it in such a way that it looks more spread out.
+  ![](sen_pop19_adm2.png)
