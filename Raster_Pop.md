@@ -26,3 +26,7 @@ ggplot(sen_sf_adm1) +
   
   I also did this for the subdivision level 2, using fill=log(pop19) inside of the first call to geom_sf. Since the administrative subdivisions on this level are slightly smaller than the level 1, the population concentrations seems more spread out. Additionally, I think taking the log of the population data scaled it in such a way that it looks more spread out.
   ![](sen_pop19_adm2.png)
+
+I continued to the stretch goal 2, which introduces blue at the lower end of the spectrum. This allows us to see where cold spots are for population, as well as hot spots. This once again used the log of pop19, and kept the division of admistrative subdivisions at level 2 (and it included level 1 as well, to show the larger areas).
+
+![](sen_pop19_blue_to_red.png)
