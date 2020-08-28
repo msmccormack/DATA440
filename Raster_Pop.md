@@ -20,6 +20,6 @@ ggplot(sen_sf_adm1) +
                size = 2) +
   scale_fill_gradient(low = "yellow", high = "red")
   ```
-   ![](lbr_pop19.png)
+   ![](sen_pop19.png)
    
   As you can see, the more densely populated areas are (generally) on the western side of Senegal.
