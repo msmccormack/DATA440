@@ -14,8 +14,4 @@ The following 3D plot of Senegal shows the population around different adminstra
 
 ![](senegal.mp4)
 
-<video width="320" height="240" controls>
-  <source src="senegal.mov" type="video/mp4">
-</video>
-
 [^fn1] Source: https://eros.usgs.gov/westafrica/country/republic-senegal
