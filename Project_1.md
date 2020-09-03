@@ -10,5 +10,8 @@ We then looked at the second adminstrative level, and broke the population up in
 
 ![](sen_adm2_bp.png)
 
+The following 3D plot of Senegal shows the population around different adminstrations in 3D form.
+
+![](senegal.mp4)
 
 [^fn1] Source: https://eros.usgs.gov/westafrica/country/republic-senegal
