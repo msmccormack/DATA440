@@ -14,6 +14,9 @@ The following 3D plot of Senegal shows the population around different adminstra
 
 ![](senegal.mp4)
 
-The subdivision of Senegal that I chose to be the base for my agent-based model is Diourbel, which had a population of 323,394 people in 2019.
+The subdivision of Senegal that I chose to be the base for my agent-based model is Diourbel (at the adm 2 level, not adm 1), which had a population of 323,394 people in 2019. The following plot shows the spread of population in Diourbel, with ADM 2 only, then ADM 2 and 3, and finally ADM's 2, 3, and 4.
+![](Diourbel_ADM2.png)
+![](Diourbel_ADM23.png)
+![](Diourbel_ADM234.png)
 
 [^fn1] Source: https://eros.usgs.gov/westafrica/country/republic-senegal
