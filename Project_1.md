@@ -18,6 +18,12 @@ The subdivision of Senegal that I chose to be the base for my agent-based model 
 ![](Diourbel_ADM2.png)
 ![](Diourbel_ADM23.png)
 ![](Diourbel_ADM234.png)
+
 A color-coded barplot of the ADM4's of Diourbel is shown below:
+
 ![](Bplot_Diourbel.png)
+
+And here is a map of the ADM2 Diourbel, broken up by ADM4. As you can see, the southern ADM4's have a higher population than the northern ones.
+
+![](Diourbel.png)
 [^fn1] Source: https://eros.usgs.gov/westafrica/country/republic-senegal
