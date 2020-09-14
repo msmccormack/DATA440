@@ -14,16 +14,9 @@ The following 3D plot of Senegal shows the population around different adminstra
 
 ![](senegal.mp4)
 
-The subdivision of Senegal that I chose to be the base for my agent-based model is Diourbel (at the adm 2 level, not adm 1), which had a population of 323,394 people in 2019. The following plot shows the spread of population in Diourbel, with ADM 2 only, then ADM 2 and 3, and finally ADM's 2, 3, and 4.
-![](Diourbel_ADM2.png)
+The subdivision of Senegal that I chose to be the base for my agent-based model is Ndoulo, which is an ADM3 inside of Diourbel. Ndoulo had a population of 219,298 people in 2019. The following plot shows the spread of population in Diourbel with ADM 2 and 3. The southern half of the division is Ndoulo.
 ![](Diourbel_ADM23.png)
-![](Diourbel_ADM234.png)
 
-A color-coded barplot of the ADM4's of Diourbel is shown below:
 
-![](Bplot_Diourbel.png)
 
-And here is a map of the ADM2 Diourbel, broken up by ADM4. As you can see, the southern ADM4's have a higher population than the northern ones.
-
-![](Diourbel.png)
 [^fn1] Source: https://eros.usgs.gov/westafrica/country/republic-senegal
