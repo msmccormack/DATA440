@@ -14,9 +14,11 @@ The following 3D plot of Senegal shows the population around different adminstra
 
 ![](senegal.mp4)
 
-The subdivision of Senegal that I chose to be the base for my agent-based model is Ndoulo, which is an ADM3 inside of Diourbel. Ndoulo had a population of 219,298 people in 2019. The following plot shows the spread of population in Diourbel with ADM 2 and 3. The southern half of the division is Ndoulo.
+The subdivision of Senegal that I chose to be the base for my agent-based model is Ndoulo, which is an ADM3 inside of Diourbel. Ndoulo had a population of 219,298 people in 2019. I chose to model Ndoulo because it has a large population in its south central area, but the rest of the population is diffused across the rest of the area in the form of smaller towns. Thus, I figured this would be a good area to model and try to capture the smaller settlements. The following plot shows the spread of population in Diourbel with ADM 2 and 3. The southern half of the division is Ndoulo.
 ![](Diourbel_ADM23.png)
 
-
+The population distribution for Ndoulo is as follows:
+![](ndoulo.png)
+As you can see, the population is greatest in the ADM4 Patar.
 
 [^fn1] Source: https://eros.usgs.gov/westafrica/country/republic-senegal
