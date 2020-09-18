@@ -26,4 +26,26 @@ The population distribution for Ndoulo and Ndidy, shown via map/geometric bar pl
 
 As you can see, the population is greatest in the ADM4 Patar. However, like the other plot showed, Patar's population was mostly concentrated in the southwestern portion of the area, which could be a little misleading. Most of the other ADM4's of Ndoulo have a relatively smaller population than Patar but still generally more than those ADM4's in Ndidy. However, Ndidy has enough population to the point that we should be able to identify some smaller settlements.
 
+Given all of this information, I decided to model the de facto settlements for Ndoulo and Ndidy. I began this process by cropping and masking Senegal's population data, and I continued on by plotting the subdivision density with a sigma of .003051192. This gave me the following plot:
+
+![](Diourbel_DF1.png)
+
+Next, to plot the contour lines, I converted the density plot to a spatial grid class, converted that to an image, and then created a contour object, for which I used 3.5 million levels. This contour object can then be overlayed with the above plot to show the areas determined to have settlements in Ndoulo and Ndidy, which is shown below.
+
+![](Diourbel_DF2.png)
+
+The contour lines show that the densely populated area of Patar and some of its surrounding ADMs were determined to be settlements, as well as some further north. However, we can take this visualization a step further by truly isolating the contoured areas from the rest of the non-populated areas. The result plot is pictured below, providing us with the countoured areas in blue. Each contoured area has a point inside of it; the size and color of this point is contingent on how populated the area is and how densely populated the area is, respectively. Patar for example is both highly populated and densely populated so it is a bright red, whereas the smaller northern settlements are closer to yellow and are smaller points signifying a smaller, less dense population.
+
+![](Diourbel_DF3.png)
+
+To add another element into this analysis, we can plot roadways ontop of this plot. To do this, I downloaded the roadways dataset from HDX and unioned them with Ndoulo and Ndidy. I only included primary and tertiary roads (I grouped secondary with tertiary, because there was only one secondary road) on my plot - had I included anything further, this plot could've gotten messy. 
+
+![](Diourbel_DF4.png)
+
+Lastly, I plotted any major health care facilities that existed in my areas, of which there was only one, at the center of Patar.
+
+![](Diourbel_DF5.png)
+
+
+
 [^fn1] Source: https://eros.usgs.gov/westafrica/country/republic-senegal
