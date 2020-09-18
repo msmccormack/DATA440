@@ -42,7 +42,7 @@ To add another element into this analysis, we can plot roadways ontop of this pl
 
 ![](Diourbel_DF4.png)
 
-Lastly, I plotted any major health care facilities that existed in my areas, of which there was only one, at the center of Patar.
+Lastly, I plotted any major health care facilities that existed in my areas, of which there was only one, at the center of the densely populated area.
 
 ![](Diourbel_DF5.png)
 
