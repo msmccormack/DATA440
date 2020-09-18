@@ -38,14 +38,18 @@ The contour lines show that the densely populated area of Patar and some of its 
 
 ![](Diourbel_DF3.png)
 
-To add another element into this analysis, we can plot roadways ontop of this plot. To do this, I downloaded the roadways dataset from HDX and unioned them with Ndoulo and Ndidy. I only included primary and tertiary roads (I grouped secondary with tertiary, because there was only one secondary road) on my plot - had I included anything further, this plot could've gotten messy. 
+To add another element into this analysis, we can plot roadways ontop of this plot. To do this, I downloaded the roadways dataset from HDX and unioned them with Ndoulo and Ndidy. I only included primary, secondary, and tertiary roads (purple, cyan, and blue, respectively) on my plot - had I included anything further, this plot could've gotten messy. 
 
 ![](Diourbel_DF4.png)
 
-Lastly, I plotted any major health care facilities that existed in my areas, of which there was only one, at the center of the densely populated area.
+Lastly, I plotted any major health care facilities, of which there was only one, at the center of the densely populated area.
 
 ![](Diourbel_DF5.png)
 
+In the final plot from above, the contour polygons from the initial contour plot were maintained and now have the points inside to give an indication of both population size and density. The countour polygon for the main city in the southwest is by far the largest, showing that the extent of the city or town is relatively expansive. Just northeast from there is the second largest polygon, but that one is still only a fraction of the size of the largest one. Additionally, the largest 2 polygons also have a higher population density than the rest (500 or more). The rest of the polygons are substantially smaller, with varying densities (all smaller than the other 2). So, the one primary settlement in the southwestern portion of the area serves as the centerpoint for the system. The fact that the only major health care facility in the area is in this settlement raises the number of people that may go to it. 
 
+When it comes to the system of settlements sizes and relative location to one another,
+
+When it comes to the transportation network and its capacity to facilitate access across my selected area, the primary (purple) roads link the second and third largest settlements to each other. Additionally, one primary road goes out of the western border which probably connects my area with another major settlement. This would be something to consider in the future - incorporating even more areas to expand the reach of this network. However, in my opinion the most important roads are the tertiary roads. The tertiary roads connect every settlement in Ndidy to each other in some way. The tertiary roads also link to the 2 largest settlements in Ndoulo. Without these roads, the network would be almost completely unconnected and the nodes would be relatively insignificant.
 
 [^fn1] Source: https://eros.usgs.gov/westafrica/country/republic-senegal
