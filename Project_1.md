@@ -14,14 +14,16 @@ I then looked at the population levels of the ADM2s within each ADM1 with a seco
 
 Most of the ADM1s contain 3 or less ADM2s. Some ADM2s (particularly in Dakar and Thies) have substanstially higher populations than even some ADM1s, which makes sense.
 
-The subdivision of Senegal that I chose to be the base for my agent-based model of de facto settlements is Ndoulo, which is an ADM3 inside of the ADM2 Diourbel, which is inside of the ADM1 Diourbel. Ndoulo had a population of 219,298 people in 2019. I chose to model Ndoulo because Diourbel's proximity to Dakar meant that there would be a decent amount of people to model, but at the same time it wouldn't be too urban of an area to model. The initial plot of Ndoulo showed me that it has a large population in its south central area, but that the rest of the population is diffused across the remaining area in the form of smaller towns and settlements. Thus, I figured this would be a good area to model and try to capture the smaller settlements surrounding the larger city, and also use roads and other infrastructure to help. The first of the 2 plots below shows the spread of population in Diourbel with ADM 2 and 3; the southern half of the division is Ndoulo. The second plot shows the ADM4's of Ndoulo, to give me a better idea of Ndoulo's population breakdown.
+The subdivisions of Senegal that I chose to be the base for my agent-based model of de facto settlements are Ndidy and Ndoulo, which are ADM3's that make up the entirety of the ADM2 Diourbel, which is inside of the ADM1 Diourbel. Ndoulo had a population of 219,298 people in 2019, while Ndidy had a population of 104,096 people. I chose to model these two areas because Diourbel's proximity to Dakar meant that there would be a decent amount of people to model, but at the same time it wouldn't be too urban of an area to model. The initial plot of Ndoulo and Ndidy showed me that Ndoulo has a large population in its south central area, but there are smaller towns and settlements. Ndidy was much less populated, and the settlements seemed like they would be sporadically scattered around. Thus, I figured this would be a good area to model and try to capture the smaller settlements in the north, as well as the larger city. I also figured that roads, health care facilities, and other features would help explain my models. The plot below shows the spread of population in Ndoulo and Ndidy (the southern half of the division is Ndoulo).
 
 ![](Diourbel_ADM23.png)
 
-![](Ndoulo_ADM4s.png)
+The population distribution for Ndoulo and Ndidy, shown via map/geometric bar plot, is as follows:
 
-The population distribution for Ndoulo, shown via map/geometric bar plot, is as follows:
-![](ndoulo.png)
-As you can see, the population is greatest in the ADM4 Patar. However, like the other plot showed, Patar's population was mostly concentrated in the southwestern portion of the area, which could be a little misleading. Most of the other ADM4's of Ndoulo have a relatively smaller population than Patar but still enough to capture some smaller settlements.
+![](Ndoulo_Ndidy.png)
+
+![](Ndoulo_Ndidy_ADM4.png)
+
+As you can see, the population is greatest in the ADM4 Patar. However, like the other plot showed, Patar's population was mostly concentrated in the southwestern portion of the area, which could be a little misleading. Most of the other ADM4's of Ndoulo have a relatively smaller population than Patar but still generally more than those ADM4's in Ndidy. However, Ndidy has enough population to the point that we should be able to identify some smaller settlements.
 
 [^fn1] Source: https://eros.usgs.gov/westafrica/country/republic-senegal
