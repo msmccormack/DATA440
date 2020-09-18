@@ -22,7 +22,7 @@ The population distribution for Ndoulo and Ndidy, shown via map/geometric bar pl
 
 ![](Ndoulo_Ndidy.png)
 
-![](Ndoulo_Ndidy_ADM4.png)
+![](Ndoulo_Ndidy_ADM4.png) 
 
 As you can see, the population is greatest in the ADM4 Patar. However, like the other plot showed, Patar's population was mostly concentrated in the southwestern portion of the area, which could be a little misleading. Most of the other ADM4's of Ndoulo have a relatively smaller population than Patar but still generally more than those ADM4's in Ndidy. However, Ndidy has enough population to the point that we should be able to identify some smaller settlements.
 
