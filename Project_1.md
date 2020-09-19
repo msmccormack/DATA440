@@ -38,7 +38,7 @@ The contour lines show that the densely populated area near southwestern Patar a
 
 ![](Diourbel_DF3.png)
 
-Zipf's Law states that the largest settlement is the basis for which we should expect each subsequent settlement's size to be. The largest settlement is that settlement's population divided by one; the second largest settlement's population is expect to be the largest settlement's population divided by 2; this trend is expect to contiune such that the nth settlement's expected population can be calculated as the largest settlement's population divided by n. When I plotted Zipf's law for my area without taking the log of my variables, I got something very far from what I expected. This is because the largest settlement was substantially higher than all the rest.
+Zipf's Law states that the largest settlement is the basis for which we should expect each subsequent settlement's size to be. The largest settlement's population is just that settlement's population divided by one; the second largest settlement's population is expected to be the largest settlement's population divided by 2; this trend is expected to contiune such that the nth settlement's expected population can be calculated as the largest settlement's population divided by n. When I plotted Zipf's law for my area without taking the log of my variables, I got something very far from what I expected. This is because the largest settlement was substantially higher than all the rest.
 
 ![](Zipfs_all.png) ![](Zipfs_combined.png)
 
