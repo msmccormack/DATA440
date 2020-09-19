@@ -38,11 +38,9 @@ The contour lines show that the densely populated area of Patar and some of its 
 
 ![](Diourbel_DF3.png)
 
-Zipf's Law states that . The below plots show that .
+Zipf's Law states that each subsequent settlement in order from largest to smallest should be about the maximum population of any settlement divided by n (n being the settlement number after the first). When I plotted Zipf's law for my area, I originally got something very far from what I expected. I then took the log of both the rank and the population, which is much closer to what was expected. The below plots show the log(rank) and log(pop) plotted against each other for all of the polygons, and then the combined polygons. The combined polygon plot looks exactly as Zipf's law expected, whereas the plot for all polygons was closer than before (without the log) but still a little off.
 
-![](LOGGED_Zipf.png)
-
-![](LOGGED_zipf_comb.png)
+![](LOGGED_Zipf.png) ![](LOGGED_zipf_comb.png)
 
 To add another element into this analysis, we can plot roadways ontop of this plot. To do this, I downloaded the roadways dataset from HDX and unioned them with Ndoulo and Ndidy. I only included primary, secondary, and tertiary roads (purple, cyan, and blue, respectively) on my plot - had I included anything further, this plot could've gotten messy. 
 
