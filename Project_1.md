@@ -38,6 +38,12 @@ The contour lines show that the densely populated area of Patar and some of its 
 
 ![](Diourbel_DF3.png)
 
+Zipf's Law states that . The below plots show that .
+
+![](LOGGED_Zipf.png)
+
+![](LOGGED_zipf_comb.png)
+
 To add another element into this analysis, we can plot roadways ontop of this plot. To do this, I downloaded the roadways dataset from HDX and unioned them with Ndoulo and Ndidy. I only included primary, secondary, and tertiary roads (purple, cyan, and blue, respectively) on my plot - had I included anything further, this plot could've gotten messy. 
 
 ![](Diourbel_DF4.png)
