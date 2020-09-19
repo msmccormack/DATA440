@@ -14,11 +14,11 @@ I then looked at the population levels of the ADM2s within each ADM1 with a seco
 
 Most of the ADM1s contain 3 or less ADM2s. Some ADM2s (particularly in Dakar and Thies) have substanstially higher populations than even some ADM1s, which makes sense.
 
-The subdivisions of Senegal that I chose to be the base for my agent-based model of de facto settlements are Ndidy and Ndoulo, which are ADM3's that make up the entirety of the ADM2 Diourbel, which is inside of the ADM1 Diourbel. Ndoulo had a population of 219,298 people in 2019, while Ndidy had a population of 104,096 people. I chose to model these two areas because Diourbel's proximity to Dakar meant that there would be a decent amount of people to model, but at the same time it wouldn't be too urban of an area to model. The initial plot of Ndoulo and Ndidy showed me that Ndoulo has a large population in its south central area, but there are smaller towns and settlements. Ndidy was much less populated, and the settlements seemed like they would be sporadically scattered around. Thus, I figured this would be a good area to model and try to capture the smaller settlements in the north, as well as the larger city. I also figured that roads, health care facilities, and other features would help explain my models. The plot below shows the spread of population in Ndoulo and Ndidy (the southern half of the division is Ndoulo).
+The subdivisions of Senegal that I chose to be the base for my agent-based model of de facto settlements are Ndidy and Ndoulo, which are ADM3's that make up the entirety of the ADM2 Diourbel, which is inside of the ADM1 Diourbel. Ndoulo had a population of 219,298 people in 2019, while Ndidy had a population of 104,096 people. I chose to model these two areas because Diourbel's proximity to Dakar meant that there would be a decent amount of people to model, but at the same time it wouldn't be too urban of an area to model. The initial plot of Ndoulo and Ndidy showed me that Ndoulo has a large population in its south central area, but there are a few smaller towns and settlements scattered around the outskirts. Ndidy was entirely sparsely populated, and the settlements seemed like they were sporadically scattered around. Thus, I figured this would be a good area to model and try to capture the smaller settlements in the north, as well as the larger city. I also figured that roads, health care facilities, and other features would help explain my models and possibly connect these settlements in the north with the larger ones down south. The plot below shows the spread of population in Ndoulo and Ndidy (the southern half of the division is Ndoulo).
 
 ![](Diourbel_ADM23.png)
 
-The population distribution for Ndoulo and Ndidy, shown via map/geometric bar plot, is as follows:
+The population distribution for Ndoulo and Ndidy by ADM4, shown via map/geometric bar plot, is as follows:
 
 ![](Ndoulo_Ndidy.png)
 
@@ -30,15 +30,19 @@ Given all of this information, I decided to model the de facto settlements for N
 
 ![](Diourbel_DF1.png)
 
-Next, to plot the contour lines, I converted the density plot to a spatial grid class, converted that to an image, and then created a contour object, for which I used 3.5 million levels. This contour object can then be overlayed with the above plot to show the areas determined to have settlements in Ndoulo and Ndidy, which is shown below.
+Next, to plot the contour lines surrounding settlements, I: converted the density plot to a spatial grid class, converted that to an image, and then created a contour object for which I used 3.5 million levels. This contour object can then be overlayed with the above plot to show the areas determined to have settlements in Ndoulo and Ndidy, which is shown below.
 
 ![](Diourbel_DF2.png)
 
-The contour lines show that the densely populated area of Patar and some of its surrounding ADMs were determined to be settlements, as well as some further north. However, we can take this visualization a step further by truly isolating the contoured areas from the rest of the non-populated areas. The result plot is pictured below, providing us with the countoured areas in blue. Each contoured area has a point inside of it; the size and color of this point is contingent on how populated the area is and how densely populated the area is, respectively. Patar for example is both highly populated and densely populated so it is a bright red, whereas the smaller northern settlements are closer to yellow and are smaller points signifying a smaller, less dense population.
+The contour lines show that the densely populated area of Patar and some of the smaller surrounding areas were determined to be settlements. Additionally, there were a bunch of settlements identified in Ndidy, mostly in the eastern and the northern areas. However, we can take this visualization a step further by truly isolating the contoured areas from the rest of the non-populated areas. The resulting plot is pictured below, providing us with the countoured areas in blue. Each contoured area has a point inside of it; the size and color of this point is contingent on how populated the area is and how densely populated the area is, respectively. For example, the larger city in the middle of Ndoulo is both highly populated and densely populated so it is a large bright red point, whereas the smaller northern settlements are smaller closer-to-yellow points, signifying a lower/less dense population.
 
 ![](Diourbel_DF3.png)
 
-Zipf's Law states that each subsequent settlement in order from largest to smallest should be about the maximum population of any settlement divided by n (n being the settlement number after the first). When I plotted Zipf's law for my area, I originally got something very far from what I expected. I then took the log of both the rank and the population, which is much closer to what was expected. The below plots show the log(rank) and log(pop) plotted against each other for all of the polygons, and then the combined polygons. The combined polygon plot looks exactly as Zipf's law expected, whereas the plot for all polygons was closer than before (without the log) but still a little off.
+Zipf's Law states that the largest settlement is the basis for which we should expect each subsequent settlement's size to be. The largest settlement is that settlement's population divided by one; the second largest settlement's population is expect to be the largest settlement's population divided by 2; this trend is expect to contiune such that the nth settlement's expected population can be calculated as the largest settlement's population divided by n. When I plotted Zipf's law for my area without taking the log of my variables, I got something very far from what I expected. This is because the largest settlement was substantially higher than all the rest.
+
+![](Zipfs_all.png) ![](Zipfs_combined.png)
+
+I then took the log of both the rank and the population, which is much closer to what was expected. The below plots show the log(rank) and log(pop) plotted against each other for all of the polygons, and then the combined polygons. The combined polygon plot looks exactly as Zipf's law expected, whereas the plot for all polygons was closer than before (without the log) but still a little off.
 
 ![](LOGGED_Zipf.png) ![](LOGGED_zipf_comb.png)
 
