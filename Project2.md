@@ -7,8 +7,13 @@ After the proposal was successful and I had access to Senegal's data, I imported
 
 As you can see, there are many entries and columns in this dataset. I then identified the following variables as such:
 
+
 Survey weights
+
 Number of household members
+
 Location of your selected research area
+
 Gender of household members
+
 Age of household members
