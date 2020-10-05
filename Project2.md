@@ -14,10 +14,6 @@ Number of household members : hv009
 
 Location of your selected research area (country code and phase): hv000
 
-Gender of household members : hv010 (women)/hv011 (men)
+Gender of household members : columns 468-533
 
-Age of household members : 
-
-Gender of household (head) : hv219
-
-Age of household (head) : hv220
+Age of household members : columns 534-599
