@@ -5,7 +5,7 @@ After the proposal was successful and I had access to Senegal's data, I imported
 
 ![](variables.png)
 
-As you can see, there are many entries and columns in this dataset. I then identified the following variables as such:
+As you can see, there are many entries and columns in this dataset. More specifically, there are . I then identified the following variables as such:
 
 
 Survey weights : hv005
@@ -17,3 +17,8 @@ Location of your selected research area (country code and phase): hv000
 Gender of household members : columns 468-533
 
 Age of household members : columns 534-599
+
+Education : columns 600-665
+
+Wealth : hv270
+
