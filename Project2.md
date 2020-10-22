@@ -43,6 +43,8 @@ Then I randomly sampled from these generated households using the slice_sample f
 
 Given the weighted error, I think this population is less accurate than the one generated at the adm0 level; .17% is greater than .09%, meaning the generated population at the adm0 level is more accurate. However, the difference between these two values is very small, so they are pretty similar in the big picture.
 
+I also expanded the generated households to persons in Diourbel. To do this, I pivoted the variables again and bound them together.
+
 ## When compared to a randomly generated synthetic population that describes the demographic attributes of households and persons, does yours more closely approximate reality? How is yours an improvement over a synthetic population that was generated in accordance with complete spatial randomness? Generate plots and incorporate results from your work as evidence in support of an argument that the synthetic population you generated is a good approximation of the reality that existed in your selected location at that given time.
 
 F
