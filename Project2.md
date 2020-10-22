@@ -35,9 +35,7 @@ I also expanded the generated households to persons with adm0 locations. This wa
 
 To start this process, I began by subsetting the data by my intended adm1 (Diourbel). Next, I calculated the average number of households of Diourbel as the sum of the population raster for Diourbel divided by the mean household size of the DHS data (subsetted to Diourbel locations). To then generate the Diourbel household structure including demgraphic attributes of persons, I used this number of households and randomly generated points from the population as households, using the Diourbel population raster as the probability density and the Diourbel shape file as the win. The x and y coordinates from these points were then used with the same coordinate system as that of Diourbel. 
 
-![](diourbel_hhs)
-
-![](diourbel_sampP)
+![](diourbel_hhs) ![](diourbel_sampP)
 
 Then I randomly sampled from these generated households using the slice_sample function; this selected random points from our household data with n being the average household number of households that we calculated above, with replacement on. The weighted error I ended with was .
 
