@@ -35,9 +35,13 @@ I also expanded the generated households to persons with adm0 locations. This wa
 
 To start this process, I began by subsetting the data by my intended adm1 (Diourbel). Next, I calculated the average number of households of Diourbel as the sum of the population raster for Diourbel divided by the mean household size of the DHS data (subsetted to Diourbel locations). To then generate the Diourbel household structure including demgraphic attributes of persons, I used this number of households and randomly generated points from the population as households, using the Diourbel population raster as the probability density and the Diourbel shape file as the win. The x and y coordinates from these points were then used with the same coordinate system as that of Diourbel. 
 
+The first of the 2 plots below shows the overall Senegal household data (gold) vs the Diourbel data (green). The second plot shows the synthetically generated sample from all Senegal households (gold) vs the synthetically generated sample from Diourbel households (green). As you can see, these are relatively similarly shaped.
+
 ![](diourbel_hhs) ![](diourbel_sampP)
 
-Then I randomly sampled from these generated households using the slice_sample function; this selected random points from our household data with n being the average household number of households that we calculated above, with replacement on. The weighted error I ended with was .
+Then I randomly sampled from these generated households using the slice_sample function; this selected random points from our Diourbel household data with n being the average household number of households that we calculated, with replacement on. The weighted error I ended with was 0.1702096%, which was also a very good error value.
+
+Given the weighted error, I think this population is less accurate than the one generated at the adm0 level; .17% is greater than .09%, meaning the generated population at the adm0 level is more accurate. However, the difference between these two values is very small, so they are pretty similar in the big picture.
 
 ## When compared to a randomly generated synthetic population that describes the demographic attributes of households and persons, does yours more closely approximate reality? How is yours an improvement over a synthetic population that was generated in accordance with complete spatial randomness? Generate plots and incorporate results from your work as evidence in support of an argument that the synthetic population you generated is a good approximation of the reality that existed in your selected location at that given time.
 
