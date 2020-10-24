@@ -1,6 +1,6 @@
 # Project 2
 
-For project 2, I began by requesting data for Senegal from DHS. My proposal for this data can be found on my index. 
+For project 2, I began by requesting data for Senegal from DHS; the most recent year I could find was 2016. My proposal for this data can be found on my index ![here](ProjectProposal2.md). 
 After the proposal was successful and I had access to the Senegal data, I imported the household survey dataset and looked at that data.
 
 ![](variables.png)
