@@ -49,7 +49,7 @@ I also expanded the generated households to persons in Diourbel. To do this, I p
 
 ![](Diourbel_raster)
 
-To further evaluate 
+Next, I trained a multinomial logistic regression model using a 60-40 train-test split in order to predict education level. This resulted in an accuracy of around 62.4%, which was pretty good. After that, I used a random forest model which gave me an accuracy of 62.6%. Lastly, I trained a neural network (with keras) and got an accuracy of 62.6%, which was the same as my random forest model. It seems like the best way to make these models better would be to use more variables. Including more variables would logically improve the model's performance because doing so could capture currently unseen trends in the data.
 
 ## When compared to a randomly generated synthetic population that describes the demographic attributes of households and persons, does yours more closely approximate reality? How is yours an improvement over a synthetic population that was generated in accordance with complete spatial randomness? Generate plots and incorporate results from your work as evidence in support of an argument that the synthetic population you generated is a good approximation of the reality that existed in your selected location at that given time.
 
