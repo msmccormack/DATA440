@@ -45,15 +45,10 @@ The below plots show the difference between drawing from all of Senegal versus j
 
 Then I randomly sampled from these generated households using the slice_sample function; this selected random points from our Diourbel household data with n being the average household number of households that we calculated, with replacement on. The weighted error I ended with was 0.1702096%, which was a very good error value. Given this weighted error, I think this population is less accurate than the one generated at the adm0 level; .17% is greater than .09%, meaning the generated population at the adm0 level is more accurate. This makes sense because the weights aren't as good because you are subsetting from a country level survey; hence going from adm0 to adm1 will introduce slightly more error than before. 
 
-I also expanded the generated households to persons in Diourbel. To do this, I pivoted the gender, age, and education variables again and bound them together. The weighted error of 8.822475%; thus the error of the persons level of Diourbel is better than the eorror of the persons level at the adm0 level. The first plot below is of the synthetic population, and the second plot is the population raster for Diourbel; as you can see, our synthetic population is relatively similarly distributed.
-
-![](diourbel_1.png)
-
-![](diourbel_2.png)
+I also expanded the generated households to persons in Diourbel. To do this, I pivoted the gender, age, and education variables again and bound them together. The weighted error of 8.822475%; thus the error of our individual data at the adm1 level is better than the eorror of the individual data at the adm0 level. This is surprising, because as was discussed above, the weights would likely not be as good because we are looking at an adm1 with country (adm0 level) data. However, in this case it seems that the error decreased on the individual level.
 
 ## When compared to a randomly generated synthetic population that describes the demographic attributes of households and persons, does yours more closely approximate reality? How is yours an improvement over a synthetic population that was generated in accordance with complete spatial randomness? Generate plots and incorporate results from your work as evidence in support of an argument that the synthetic population you generated is a good approximation of the reality that existed in your selected location at that given time.
-
-Our comparison begins with generating heat maps (using the heatmaply library) for raw data, scaled data, normalized data, and percentage data respectively. 
+I also generated heat maps (using the heatmaply library) for raw data, scaled data, normalized data, and percentage data, respectively. 
 
 ![](raw.png)
 
@@ -65,10 +60,21 @@ Our comparison begins with generating heat maps (using the heatmaply library) fo
 
 The raw data heatmap showed us that age has some insight when it comes to making predictions, but the rest of the variables did not seem very useful. The scaled data showed a greater diversity in regard to the usefulness of other variables, but there was still not any incredibly strong relationships present. The normalized data showed . Lastly, the percentage data showed that there were places where all variables seemed to play a part as predictors.
 
-Next, I trained a variety of ML models to predict education level. I began with a multinomial logistic regression model using a 60-40 train-test split in order to predict education level. This resulted in an accuracy of around 62.8%. The gain and roc curves for the logistic regression model are below, respectively:
+Next, I trained a variety of ML models to predict education level. I began with a multinomial logistic regression model using a 60-40 train-test split in order to predict education level. This resulted in an accuracy of around 62.8%. The gains and ROC curves for the logistic regression model are below, respectively:
 ![](gain_m.png) ![](roc_m.png)
 
-After that, I used a random forest model which gave me an accuracy of 64.1%. Lastly, I trained a neural network (with keras) and got an accuracy of 69.4%. The confusion matrix for the neural network results is below.
+After that, I used a random forest model which gave me an accuracy of 64.1%. The gains and ROC curves for the ranger random forest model are below, respectively:
+![](gain.png) ![](roc.png)
+
+Looking at the gains and ROC curves for both the multinomial logistic regression model and the random forest model, it is clear to me that the random forest model is better. The curves are much closer to the optimal value for the random forest value than the multinomial logistic regression model.
+
+Lastly, I trained a neural network (with keras) and got an accuracy of 69.4%. The confusion matrix for the neural network results is below.
 ![](neural_net_result.png)
 
-It seems like the best way to make these models better would be to use more variables. Including more variables would logically improve the model's performance because doing so could capture currently unseen trends in the data.
+Overall, my analysis seemed to show that the DHS survey data was a relatively good representation of the true population. The DHS survey was conducted in 2016, and my population raster data is from 2019; this difference in years may have had an impact on my results, which is something to consider. Despite the time gap between the 2 data sets, the below plots seem to show evidence that the synthetic population you generated is a good approximation of the reality that existed in Diourbel. The first plot below is of the synthetic population we generated for Diourbel, and the second plot is the population raster for Diourbel.
+
+![](diourbel_1.png)
+
+![](diourbel_2.png)
+
+When comparing and contrasting the 2 of these plots, there are almost no differences between the synthetically generated persons and the actual population raster. The large clumps of people we had previously identified as de facto settlements in Diourbel (at the adm2 level) are clearly reflected in our synthetically generated plot, which shows us how our synthetically generated population is an improvement over a synthetic population that was generated in accordance with complete spatial randomness. A synthetic population with complete spatial randomness wouldnt've captured those settlements/trends in my selected area.
