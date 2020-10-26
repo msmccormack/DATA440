@@ -51,6 +51,16 @@ I also expanded the generated households to persons in Diourbel. To do this, I p
 
 ## When compared to a randomly generated synthetic population that describes the demographic attributes of households and persons, does yours more closely approximate reality? How is yours an improvement over a synthetic population that was generated in accordance with complete spatial randomness? Generate plots and incorporate results from your work as evidence in support of an argument that the synthetic population you generated is a good approximation of the reality that existed in your selected location at that given time.
 
+The following plots are raw, scale, normal, and percent.
+
+![](raw.png)
+
+![](scale.png)
+
+![](normal.png)
+
+![](percent.png)
+
 To understand more about how my synthetically generated population compares to others, I trained a variety of ML models to predict education level. I began with a multinomial logistic regression model using a 60-40 train-test split in order to predict education level. This resulted in an accuracy of around 62.8%, which was . 
 
 After that, I used a random forest model which gave me an accuracy of 64.1%. 
