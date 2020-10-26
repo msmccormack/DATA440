@@ -63,13 +63,12 @@ Our comparison begins with generating heat maps (using the heatmaply library) fo
 
 ![](percent.png)
 
-The raw data heatmap showed us that age has some insight when it comes to making predictions, but the rest of the variables did not seem very useful. The scaled data showed a greater diversity in regard to the usefulness of other variables, but there was still not any incredibly strong relationships present. The normalized data showed . Lastly, the percentage data showed that there were places where all variables seemed to play a part as predictors. 
+The raw data heatmap showed us that age has some insight when it comes to making predictions, but the rest of the variables did not seem very useful. The scaled data showed a greater diversity in regard to the usefulness of other variables, but there was still not any incredibly strong relationships present. The normalized data showed . Lastly, the percentage data showed that there were places where all variables seemed to play a part as predictors.
 
-To understand more about how my synthetically generated population compares to others, I trained a variety of ML models to predict education level. I began with a multinomial logistic regression model using a 60-40 train-test split in order to predict education level. This resulted in an accuracy of around 62.8%, which was . 
+Next, I trained a variety of ML models to predict education level. I began with a multinomial logistic regression model using a 60-40 train-test split in order to predict education level. This resulted in an accuracy of around 62.8%. The gain and roc curves for the logistic regression model are below, respectively:
+![](gain_m.png) ![](roc_m.png)
 
-After that, I used a random forest model which gave me an accuracy of 64.1%. 
-
-Lastly, I trained a neural network (with keras) and got an accuracy of 69.4%. The confusion matrix for the neural network results is below.
+After that, I used a random forest model which gave me an accuracy of 64.1%. Lastly, I trained a neural network (with keras) and got an accuracy of 69.4%. The confusion matrix for the neural network results is below.
 ![](neural_net_result.png)
 
 It seems like the best way to make these models better would be to use more variables. Including more variables would logically improve the model's performance because doing so could capture currently unseen trends in the data.
