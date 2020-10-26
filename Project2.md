@@ -55,7 +55,7 @@ For the next step in my analysis, I generated heat maps (using the heatmaply lib
 
 ![](percent.png)
 
-The raw data heatmap showed us that age has some insight when it comes to making predictions, but the rest of the variables did not seem very useful. The scaled data showed a greater diversity in regard to the usefulness of other variables besides age, but there was still not any incredibly strong relationships present. The normalized data showed more relationships were present, but they were not too clear in all cases. Lastly, the percentage data showed that there were places where all variables seemed to play a part as predictors.
+The raw data heatmap shows us the heterogeneity of the combinations of the variables that are going into the model; the only place where the model is really giving us different results from everywhere else was in the bottom left corner with age. The scaled data, which shows all the variables at the same scale and interval, had more corresponding values and we could see relative patterns emerging. The normalized data showed even more heterogeneity, which is representing the fact that our model is able to make more predictions along the continuum of all the different outcomes that we potentially have; this improves its predictive power. Lastly, the percentage data was the best of the preprocessing transformations; doing this analyzes the data to give us a better idea of how effective the data is, and it improves the predictive power of the logistic regression. Each one was progressively better than the prior.
 
 Next, I trained a variety of ML models to predict education level. I began with a multinomial logistic regression model using a 60-40 train-test split in order to predict education level. This resulted in an accuracy of around 62.8%. The gains and ROC curves for the logistic regression model are below, respectively:
 ![](gain_m.png) ![](roc_m.png)
@@ -67,6 +67,8 @@ Looking at the gains and ROC curves for both the multinomial logistic regression
 
 Lastly, I trained a neural network (with keras) and got an accuracy of 69.4%. The confusion matrix for the neural network results is below.
 ![](neural_net_result.png)
+
+While none of these models had an incredible accuracy, the validation process helped us confirm that they were not overfitting. I think that one way to increase the accuracy of these models in the future would be to use more variables, because that would help find more relationships that could make our predictions better.
 
 Overall, my analysis seemed to show that the DHS survey data was a relatively good representation of the true population. As i stated above, the DHS survey was conducted in 2016, and my population raster data is from 2019; this difference in years may have had an impact on my results, which is something to consider. Despite the time gap between the 2 data sets, the below plots seem to show evidence that the synthetic population you generated is a good approximation of the reality that existed in Diourbel. The first plot is of the synthetic population we generated for Diourbel, and the second plot is the population raster for Diourbel.
 
