@@ -45,9 +45,11 @@ The below plots show the difference between drawing from all of Senegal versus j
 
 Then I randomly sampled from these generated households using the slice_sample function; this selected random points from our Diourbel household data with n being the average household number of households that we calculated, with replacement on. The weighted error I ended with was 0.1702096%, which was a very good error value. Given this weighted error, I think this population is less accurate than the one generated at the adm0 level; .17% is greater than .09%, meaning the generated population at the adm0 level is more accurate. This makes sense because the weights aren't as good because you are subsetting from a country level survey; hence going from adm0 to adm1 will introduce slightly more error than before. 
 
-I also expanded the generated households to persons in Diourbel. To do this, I pivoted the gender, age, and education variables again and bound them together. The weighted error of 8.822475%; thus the error of the persons level of Diourbel is better than the eorror of the persons level at the adm0 level. The plot below is a plot of our synthetically generated persons from Diourbel.
+I also expanded the generated households to persons in Diourbel. To do this, I pivoted the gender, age, and education variables again and bound them together. The weighted error of 8.822475%; thus the error of the persons level of Diourbel is better than the eorror of the persons level at the adm0 level. The first plot below is of the synthetic population, and the second plot is the population raster for Diourbel; as you can see, our synthetic population is relatively similarly distributed.
 
-![](Diourbel_raster)
+![](diourbel_1.png)
+
+![](diourbel_2.png)
 
 ## When compared to a randomly generated synthetic population that describes the demographic attributes of households and persons, does yours more closely approximate reality? How is yours an improvement over a synthetic population that was generated in accordance with complete spatial randomness? Generate plots and incorporate results from your work as evidence in support of an argument that the synthetic population you generated is a good approximation of the reality that existed in your selected location at that given time.
 
