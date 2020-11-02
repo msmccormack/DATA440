@@ -16,3 +16,5 @@
 [Project 2](Project2.md)
 
 [Insight 2](Insight_2.pdf)
+
+[Insight 3](Insight_3.pdf)
