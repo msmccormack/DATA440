@@ -14,6 +14,8 @@ Unit : hv004
 
 ## Origin-destination (OD) Matrix
 
+![](ODMatrix.png)
+
 ## How the OD matrix is used to model migration across the administrative subdivisions of Senegal
 
 ## Animated migration
