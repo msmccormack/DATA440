@@ -1,6 +1,6 @@
 # Final Project
 
-## Analysis of Gravity Model for London
+## Analysis of gravity model for London
 
 Creating a gravity model for London helped me understand .
 
@@ -11,3 +11,12 @@ As you can see, there are a staggering amount of entries and columns in this dat
 Household ID : hhid
 
 Unit : hv004
+
+## Origin-destination (OD) Matrix
+
+## How the OD matrix is used to model migration across the administrative subdivisions of Senegal
+
+## Animated migration
+
+## Tesselation of voronoi polygons
+
