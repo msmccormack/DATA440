@@ -20,3 +20,5 @@
 [Insight 3](Insight_3.pdf)
 
 [Insight 4/in class essay](Insight_4.pdf)
+
+[Final Project](Final_Project.md)
