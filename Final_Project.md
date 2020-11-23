@@ -22,6 +22,10 @@ As you can see, there are 34 rows and 34 columns in our OD matrix. Each individu
 
 ## How the OD matrix is used to model migration across the administrative subdivisions of Senegal
 
+As described above, my OD matrix is a 34x34 matrix. Each entry is representative of the migration flow from one centerpoint (the row index) to another (the column index). We also have information about distances between each pair of centerpoints. I would've liked to have added nighttime lights to my gravity model, but unfortunately I was unable to get the nighttime lights data extracted in such a way that I could use it. 
+
+The below plot shows how we are able to visualize our OD matrix; each centerpoint of migration is connected to all the others with lines. 
+
 ## Animated migration
 
 ## Tesselation of voronoi polygons
