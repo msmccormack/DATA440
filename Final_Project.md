@@ -6,7 +6,17 @@ Following "Dr. D's Idiots Guide to Spatial Interaction Modelling for Dummies", i
 
 In addition to this guide, we were provided with Garcia's paper entitled "Modeling Internal Migration Flows in Sub-Saharan Africa Using Census Microdata". In the paper, the gravity model is described to “use population sizes at each location and the distance between them as the push-pull factors. The model can be expanded by adding the previously identified characteristics of the locations that are related to migration, resulting in a series of gravity-type spatial interaction models.” These models seem to be able to help interpret migration patterns by giving us a degree of importance that location characteristics can have toward migration, as opposed to simply using population to do so. In a migration context, the gravity model especially helps because it looks at how to minimize the costs while simultaneously optimizing the benefits with geographic, sociodemographic, economic, climatic, and environmental factors playing a role. 
 
-Given what was covered in Dr. D's Idiots Guide and Garcia's paper, I decided to go through the process of constructing my own gravity model and set of voronoi polygons for Senegal. Below are spatial plots that describe in/out migration by the voronoi polygons in Senegal (Please note: I did this project using the voronoi polygons rather than the Senegalese administrative subdivisions because there were multiple flow centerpoints in a few of the administrative subdivisions that prevented me from using them, making me use the voronoi polygons instead.):
+Given what was covered in Dr. D's Idiots Guide and Garcia's paper, I decided to go through the process of constructing my own gravity model and set of voronoi polygons for Senegal. 
+
+My position was unique in this class, because I was one of the only people with multiple points inside of many ADM1's, as shown below:
+
+![](sen_cpts_adm1.png)
+
+With this in mind, it was clear to me that I was going to have to use the flow centerpoints (of which there were 34) instead of the ADM1 centerpoints (of which there were only 14) for my analysis. So, please note that I did this project using the voronoi polygons rather than the Senegalese administrative subdivisions, because there were multiple flow centerpoints in a few of the administrative subdivisions that prevented me from using them which made me use the voronoi polygons instead. The generic voronoi polygons for the 34 centerpoints is plotted below:
+
+![](sen_voronoi.png)
+
+So, below are spatial plots that describe in/out migration by the voronoi polygons (via color) in Senegal:
 
 ![](inmigration_sen.png)
 
