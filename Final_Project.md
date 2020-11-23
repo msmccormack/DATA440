@@ -6,7 +6,7 @@ Following "Dr. D's Idiots Guide to Spatial Interaction Modelling for Dummies", i
 
 In addition to this guide, we were provided with Garcia's paper entitled "Modeling Internal Migration Flows in Sub-Saharan Africa Using Census Microdata". In the paper, the gravity model is described to “use population sizes at each location and the distance between them as the push-pull factors. The model can be expanded by adding the previously identified characteristics of the locations that are related to migration, resulting in a series of gravity-type spatial interaction models.” These models seem to be able to help interpret migration patterns by giving us a degree of importance that location characteristics can have toward migration, as opposed to simply using population to do so. In a migration context, the gravity model especially helps because it looks at how to minimize the costs while simultaneously optimizing the benefits with geographic, sociodemographic, economic, climatic, and environmental factors playing a role. 
 
-Given what was covered in Dr. D's Idiots Guide and Garcia's paper, I decided to go through the process of constructing my own gravity model and set of voronoi polygons for Senegal. Below are spatial plots that describe in/out migration by the voronoi polygons in Senegal:
+Given what was covered in Dr. D's Idiots Guide and Garcia's paper, I decided to go through the process of constructing my own gravity model and set of voronoi polygons for Senegal. Below are spatial plots that describe in/out migration by the voronoi polygons in Senegal (Please note: I did this project using the voronoi polygons rather than the Senegalese administrative subdivisions because there were multiple flow centerpoints in a few of the administrative subdivisions that prevented me from using them, making me use the voronoi polygons instead.):
 
 ![](inmigration_sen.png)
 
@@ -31,6 +31,8 @@ The below plot shows how we are able to visualize our OD matrix; each centerpoin
 ## Animated migration
 
 I then made an animated plot of migration, which shows the small points travelling between the centerpoints as the migration from one area to another.
+
+![](output_mig.gif)
 
 ## Tesselation of voronoi polygons
 
