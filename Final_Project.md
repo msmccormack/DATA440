@@ -36,3 +36,6 @@ I then made an animated plot of migration, which shows the small points travelli
 
 ## Tesselation of voronoi polygons
 
+Diourbel voronoi
+
+![](diourbel_voronoi.png)
