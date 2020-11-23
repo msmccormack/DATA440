@@ -12,7 +12,7 @@ However, my position was unique because I was one of the only people with multip
 
 ![](sen_cpts_adm1.png)
 
-With this detail in mind, it was clear to me that I was going to have to use the flow centerpoints (of which there were 34) instead of the ADM1 centerpoints (of which there were only 14) for my analysis. So with that being said, please note that I did this project using the voronoi polygons rather than the Senegalese administrative subdivisions (because there were multiple flow centerpoints in a few of the administrative subdivisions. This prevented me from using them, which made me use the voronoi polygons instead). The voronoi polygons for the 34 centerpoints of migration flows in Senegal is plotted below:
+Because I didn't have an accurate simple feature object that described the administrative subdivisions, I instead used the center points provided by worldpop and approximated those boundaries with voronoi polygons. So, with this in mind, it was clear to me that I was going to have to use the flow centerpoints (of which there were 34) instead of the ADM1 centerpoints (of which there were only 14) for my analysis and I ended up doing  this project using the voronoi polygons rather than the Senegalese administrative subdivisions. The voronoi polygons for the 34 centerpoints of migration flows in Senegal is plotted below:
 
 ![](sen_voronoi.png)
 
@@ -24,19 +24,25 @@ And below are spatial plots that describe in/out migration by the voronoi polygo
 
 ## Origin-destination (OD) Matrix
 
+The dataset I ended up with includes the origin point/polygon, destination point/polygon, the distance between the origin and destination points, migration flows from the origin to the destination, the nighttime lights of the origin polygon, and finally the nighttime lights of the destination polygon:
+
+![](od_ntl.png)
+
 The origin-destination (OD) matrix that I got is shown below:
 
 ![](ODMatrix.png)
 
-As you can see, there are 34 rows and 34 columns in our OD matrix. Each individual cell within the OD matrix represents a particular combination of the flow centerpoints (of which there were 34, as specified above). The row number represents the centerpoint that is the origin of the migration, and the column number represents the centerpoint that is the destination of the migration. So with that in mind, the number in each cell represents the predicted migration flow FROM the centerpoint on the row index TO the centerpoint at the column index. There are N/A values for the center diagonal, which symbolizes the number of people who migrated from that centerpoint to itself; we did not need to take these into account.
+As you can see, there are 34 rows and 34 columns in our OD matrix. Each individual cell within the OD matrix represents a particular combination of the flow centerpoints (of which there were 34, as specified above). The row number represents the centerpoint that is the origin of the migration, and the column number represents the centerpoint that is the destination of the migration. So with that in mind, the number in each cell represents the predicted migration flow FROM the centerpoint on the row index TO the centerpoint at the column index. There are N/A values for the center diagonal, which symbolizes the number of people who migrated from that centerpoint to itself; we did not need to take these into account. 
 
 ## How the OD matrix is used to model migration across the administrative subdivisions of Senegal
 
-As described above, my OD matrix is a 34x34 matrix. Each entry is representative of the migration flow from one centerpoint (the row index) to another (the column index). We also have information about distances between each pair of centerpoints. I would've liked to have added nighttime lights to my gravity model, but unfortunately I was unable to get the nighttime lights data extracted in such a way that I could use it. 
+As described above, my OD matrix is a 34x34 matrix. Each entry is representative of the migration flow from one centerpoint (the row index) to another (the column index). We also have information about distances between each pair of centerpoints.
 
 The below plot shows how we are able to visualize our OD matrix; each centerpoint of migration is connected to all the others with lines.
 
 ![](lines_btwn_cpts.png)
+
+It was at this point that I used my data to produce a gravity model
 
 ## Animated migration
 
