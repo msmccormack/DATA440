@@ -8,15 +8,15 @@ In addition to this guide, we were provided with Garcia's paper entitled "Modeli
 
 Given what was covered in Dr. D's Idiots Guide and Garcia's paper, I decided to go through the process of constructing my own gravity model and set of voronoi polygons for Senegal. 
 
-My position was unique in this class, because I was one of the only people with multiple points inside of many ADM1's, as shown below:
+However, my position was unique because I was one of the only people with multiple centerpoints of migration flow data inside of multiple ADM1's, as shown below:
 
 ![](sen_cpts_adm1.png)
 
-With this in mind, it was clear to me that I was going to have to use the flow centerpoints (of which there were 34) instead of the ADM1 centerpoints (of which there were only 14) for my analysis. So, please note that I did this project using the voronoi polygons rather than the Senegalese administrative subdivisions, because there were multiple flow centerpoints in a few of the administrative subdivisions that prevented me from using them which made me use the voronoi polygons instead. The generic voronoi polygons for the 34 centerpoints is plotted below:
+With this detail in mind, it was clear to me that I was going to have to use the flow centerpoints (of which there were 34) instead of the ADM1 centerpoints (of which there were only 14) for my analysis. So with that being said, please note that I did this project using the voronoi polygons rather than the Senegalese administrative subdivisions (because there were multiple flow centerpoints in a few of the administrative subdivisions. This prevented me from using them, which made me use the voronoi polygons instead). The voronoi polygons for the 34 centerpoints of migration flows in Senegal is plotted below:
 
 ![](sen_voronoi.png)
 
-So, below are spatial plots that describe in/out migration by the voronoi polygons (via color) in Senegal:
+And below are spatial plots that describe in/out migration by the voronoi polygons in Senegal:
 
 ![](inmigration_sen.png)
 
@@ -28,7 +28,7 @@ The origin-destination (OD) matrix that I got is shown below:
 
 ![](ODMatrix.png)
 
-As you can see, there are 34 rows and 34 columns in our OD matrix. Each individual cell within the OD matrix represents a particular combination of the flow centerpoints (of which there were 34). The row number on the left side represents the centerpoint that is the origin, and the column number at the top represents the destination centerpoint. So, the number is each cell represents the predicted migration flow FROM the centerpoint on the row index TO the centerpoint at the column index. There are N/A values for the center diagonal, which symbolizes the number of people who migrated from that centerpoint to itself; we did not need to take these into account. 
+As you can see, there are 34 rows and 34 columns in our OD matrix. Each individual cell within the OD matrix represents a particular combination of the flow centerpoints (of which there were 34, as specified above). The row number represents the centerpoint that is the origin of the migration, and the column number represents the centerpoint that is the destination of the migration. So with that in mind, the number in each cell represents the predicted migration flow FROM the centerpoint on the row index TO the centerpoint at the column index. There are N/A values for the center diagonal, which symbolizes the number of people who migrated from that centerpoint to itself; we did not need to take these into account.
 
 ## How the OD matrix is used to model migration across the administrative subdivisions of Senegal
 
