@@ -1,6 +1,6 @@
 # Final Project
 
-## Analysis of gravity model for London
+## Analysis of gravity model for London/Introduction
 
 Following "Dr. D's Idiots Guide to Spatial Interaction Modelling for Dummies", in which we create a gravity model for London, helped me understand what was going on in this project before really getting into the weeds of it all. It provided a comprehensive overview of what our own approach should look like. The guide began with showing us how to calculate a distance matrix for all combinations of origin/destination pairs of boroughs. Next, the guide went over how to create estimates of commuter flows by transportation type for the whole country (this part also included extra data on income, job numbers, and total population for the areas, which shows the relative desirability of these areas). These commuter flows can be visualized with lines connecting each borough, with varying thickness - higher thickness represents higher commuting flows, and thinner lines represent lower commuting flows. After this, Dr. D's guide explained how to create the gravity model itself, providing some mathematic and descriptive elements about how the model works. It was incredibly helpful to see the formulas and their descriptions written out before actually implementing the model. Finally, the guide went over how to estimate model parameters, and test/improve the model accuracy.
 
@@ -24,9 +24,13 @@ As you can see, there are 34 rows and 34 columns in our OD matrix. Each individu
 
 As described above, my OD matrix is a 34x34 matrix. Each entry is representative of the migration flow from one centerpoint (the row index) to another (the column index). We also have information about distances between each pair of centerpoints. I would've liked to have added nighttime lights to my gravity model, but unfortunately I was unable to get the nighttime lights data extracted in such a way that I could use it. 
 
-The below plot shows how we are able to visualize our OD matrix; each centerpoint of migration is connected to all the others with lines. 
+The below plot shows how we are able to visualize our OD matrix; each centerpoint of migration is connected to all the others with lines.
+
+![](lines_btwn_cpts.png)
 
 ## Animated migration
+
+I then made an animated plot of migration, which shows the small points travelling between the centerpoints as the migration from one area to another.
 
 ## Tesselation of voronoi polygons
 
