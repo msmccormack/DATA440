@@ -14,7 +14,11 @@ Given what was covered in Dr. D's Idiots Guide and Garcia's paper, I decided to 
 
 ## Origin-destination (OD) Matrix
 
+The origin-destination (OD) matrix that I got is shown below:
+
 ![](ODMatrix.png)
+
+As you can see, there are 34 rows and 34 columns in our OD matrix. Each individual cell within the OD matrix represents a particular combination of the flow centerpoints (of which there were 34), and the number is . There are N/A values for the center diagonal, which symbolizes the number of people who migrated from that centerpoint to itself; we did not need to take these into account. 
 
 ## How the OD matrix is used to model migration across the administrative subdivisions of Senegal
 
