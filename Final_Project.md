@@ -60,6 +60,8 @@ I then made an animated plot of migration, which shows the small points travelli
 
 ## Tesselation of voronoi polygons
 
-Diourbel voronoi
+Below is my Voronoi tesselation of my higher resolution administrative subdivision, which is Diourbel. I used the center points of each settlement to produce the tesselation.
 
 ![](diourbel_voronoi.png)
+
+In order to produce an OD matrix of these higher resolution entities, I would . The variables I would include are largely the same; however, I would certainly look into including other variables (like those in the DHS data we used in project 2) to see if including any additional variables would aid our model. For example, I think population data/population density levels, average education levels, and average salary for each polygon would provide valuable insight into our analysis at that higher level. I would modify the number of points departing from each origin by . I would determine destinations by . When it comes to the time variable, I would make its scale . The gravity model would update these attributes to produce a different simulation of migration by . To integrate migration and transport activities at differing geospatial and temporal scales, I would .
