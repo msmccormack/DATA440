@@ -60,6 +60,8 @@ I then made an animated plot of migration, which shows the small points travelli
 
 ![](output_mig.gif)
 
+If I were going to modify the number of points departing from each origin, I would look at the origin flows sums from the OD matrix and weigh the number of points departing from each origin accordingly. So for example, If the outmigration flows from origin one are substantially higher than origin two, I would have more points departing from origin one in the animation to represent higher migration flows than origin two. Likewise, if there origin three and origin 4 have virtually the same amount of outmigration flows, I would have the same number of points departing from these origins. I would modify the time variable by stretching it out more. The data has a difference of about 5 years, so each point travelling from an origin to a destination symbolizes a migration period of 5 years. So instead of showing these migrations in only 6 seconds, it could be nice to visualize it over a longer period of time. The gravity model would be able to update these attributes that would produce a closer-to-reality simulation because it takes into account many factors, such as nighttime lights, distance between points, and more. Including these factors in our simulation will inherently make it closer to reality because the more factors you include, the closer to reality it will be.
+
 ## Tesselation of voronoi polygons
 
 Below is my Voronoi tesselation of my higher resolution administrative subdivision, which is Diourbel. I used the center points of each settlement to produce the tesselation.
