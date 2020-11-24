@@ -32,7 +32,7 @@ Then I created an origin-destination (OD) matrix for migration flows, which is s
 
 ![](ODMatrix.png)
 
-As you can see, there are 34 rows and 34 columns in our OD matrix. Each individual cell within the OD matrix represents a particular combination of the flow center points (of which there were 34, as specified above). The row number represents the center point that is the origin of the migration, and the column number represents the center point that is the destination of the migration (both numbers correspond to a voronoi polygon). So with that in mind, the number in each cell represents the predicted migration flow FROM the center point on the row index TO the center point at the column index. There are N/A values for the center diagonal, which symbolizes the number of people who migrated from that center point to itself; we did not need to take these into account.
+As you can see, there are 34 rows and 34 columns in our OD matrix. Each individual cell within the OD matrix represents a particular combination of the flow center points. The row number represents the center point that is the origin of the migration, and the column number represents the center point that is the destination of the migration (both numbers correspond to a voronoi polygon). So with that in mind, the number in each cell represents the predicted migration flow FROM the center point on the row index TO the center point at the column index. There are N/A values for the center diagonal, which symbolizes the number of people who migrated from that center point to itself; we did not need to take these into account.
 
 ## How the OD matrix is used to model migration across the voronoi subdivisions of Senegal
 
