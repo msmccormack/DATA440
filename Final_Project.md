@@ -42,13 +42,15 @@ The below plot shows how we are able to visualize our OD matrix; each centerpoin
 
 ![](lines_btwn_cpts.png)
 
-It was at this point that I used my data to produce gravity models. The first type of gravity model I went with was a double demeaning model, which is also known as a DDM. The summary of the DDM is as follows:
+It was at this point that I used my data to produce gravity models. The first type of gravity model I went with was a double demeaning model, which is also known as a DDM. The summary of the DDM is as follows, which can be used to test the goodness-of-fit of our DDM:
 
 ![](grav_ddm.png)
 
-Next, I used a poisson pseudo maximum likelihood model, which is also known as a PPML model. The summary of the PPML is as follows:
+As you can see, our model had an R-squared of .07531, meaning our model accounts for around 7.531% of the variation of flows in the system. This is much lower than we would like. However, we observed a residual standard error of .5496, which is not too bad (the closer this is to zero, the better). Next, I used a poisson pseudo maximum likelihood model, which is also known as a PPML model. The summary of the PPML is as follows:
 
 ![](grav_ppml.png)
+
+As you can see, this model seems to indicate that distance and nighttime lights of the origin are both statistically significant. However, the deviances are both really high, which is indicative of a poorly fit model.
 
 ## Animated migration
 
