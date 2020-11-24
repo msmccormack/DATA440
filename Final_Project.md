@@ -52,6 +52,8 @@ As you can see, our model had an R-squared of .07531, meaning our model accounts
 
 As you can see, this model seems to indicate that distance and nighttime lights of the origin are both statistically significant. However, the deviances are both really high, which is indicative of a poorly fit model.
 
+Given that both of our models were poorly fitted,
+
 ## Animated migration
 
 I then made an animated plot of migration, which shows the small points travelling between the centerpoints as the migration from one area to another.
