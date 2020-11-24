@@ -24,15 +24,15 @@ And below are spatial plots that describe in/out migration by the voronoi polygo
 
 ## Origin-destination (OD) Matrix
 
-The dataset I ended up with includes the origin point/polygon, destination point/polygon, the distance between the origin and destination points, migration flows from the origin to the destination, the nighttime lights of the origin polygon, and finally the nighttime lights of the destination polygon:
+The dataset I ended up with includes the origin point/polygon, destination point/polygon, the distance between the origin and destination points, migration flows from the origin to the destination, the nighttime lights of the origin polygon, and finally the nighttime lights of the destination polygon. The reason I included nighttime light data is because it can help us approximate how develoed an area is, similarly to how we used income or population in the london example. The dataset is as follows:
 
 ![](od_ntl.png)
 
-The origin-destination (OD) matrix that I got is shown below:
+Then I created an origin-destination (OD) matrix for migration flows, which is shown below:
 
 ![](ODMatrix.png)
 
-As you can see, there are 34 rows and 34 columns in our OD matrix. Each individual cell within the OD matrix represents a particular combination of the flow centerpoints (of which there were 34, as specified above). The row number represents the centerpoint that is the origin of the migration, and the column number represents the centerpoint that is the destination of the migration. So with that in mind, the number in each cell represents the predicted migration flow FROM the centerpoint on the row index TO the centerpoint at the column index. There are N/A values for the center diagonal, which symbolizes the number of people who migrated from that centerpoint to itself; we did not need to take these into account. 
+As you can see, there are 34 rows and 34 columns in our OD matrix. Each individual cell within the OD matrix represents a particular combination of the flow centerpoints (of which there were 34, as specified above). The row number represents the centerpoint that is the origin of the migration, and the column number represents the centerpoint that is the destination of the migration. So with that in mind, the number in each cell represents the predicted migration flow FROM the centerpoint on the row index TO the centerpoint at the column index. There are N/A values for the center diagonal, which symbolizes the number of people who migrated from that centerpoint to itself; we did not need to take these into account.
 
 ## How the OD matrix is used to model migration across the administrative subdivisions of Senegal
 
@@ -42,7 +42,7 @@ The below plot shows how we are able to visualize our OD matrix; each centerpoin
 
 ![](lines_btwn_cpts.png)
 
-It was at this point that I used my data to produce a gravity model
+It was at this point that I used my data to produce a gravity model. 
 
 ## Animated migration
 
