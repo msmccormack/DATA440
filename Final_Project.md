@@ -34,7 +34,7 @@ Then I created an origin-destination (OD) matrix for migration flows, which is s
 
 As you can see, there are 34 rows and 34 columns in our OD matrix. Each individual cell within the OD matrix represents a particular combination of the flow centerpoints (of which there were 34, as specified above). The row number represents the centerpoint that is the origin of the migration, and the column number represents the centerpoint that is the destination of the migration. So with that in mind, the number in each cell represents the predicted migration flow FROM the centerpoint on the row index TO the centerpoint at the column index. There are N/A values for the center diagonal, which symbolizes the number of people who migrated from that centerpoint to itself; we did not need to take these into account.
 
-## How the OD matrix is used to model migration across the administrative subdivisions of Senegal
+## How the OD matrix is used to model migration across the voronoi subdivisions of Senegal
 
 As described above, my OD matrix is a 34x34 matrix. Each entry is representative of the migration flow from one centerpoint (the row index) to another (the column index). We also have information about distances between each pair of centerpoints.
 
@@ -42,7 +42,13 @@ The below plot shows how we are able to visualize our OD matrix; each centerpoin
 
 ![](lines_btwn_cpts.png)
 
-It was at this point that I used my data to produce a gravity model. 
+It was at this point that I used my data to produce gravity models. The first type of gravity model I went with was a double demeaning model, which is also known as a DDM. The summary of the DDM is as follows:
+
+![](grav_ddm.png)
+
+Next, I used a poisson pseudo maximum likelihood model, which is also known as a PPML model. The summary of the PPML is as follows:
+
+![](grav_ppml.png)
 
 ## Animated migration
 
